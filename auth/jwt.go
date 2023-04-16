@@ -3,10 +3,10 @@ package auth
 import (
 	"time"
 
+	"github.com/Joan-Goma/websocketTemplate/models"
 	engine "github.com/JoanGTSQ/api"
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/google/uuid"
-	"websocketTemplate/models"
 )
 
 var jwtKey = []byte("kedg5b0ays1ekngsg18ruawcekgvcnz6")

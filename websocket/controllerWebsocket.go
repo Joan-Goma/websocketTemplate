@@ -2,12 +2,12 @@ package websocket
 
 import (
 	"encoding/json"
+	"github.com/Joan-Goma/websocketTemplate/controller"
 	engine "github.com/JoanGTSQ/api"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
 	"net/http"
 	"time"
-	"websocketTemplate/controller"
 )
 
 var upgrader websocket.Upgrader
@@ -70,14 +70,16 @@ func StartWebSocketServer(context *gin.Context) {
 		//Execute the command readed
 		c.ExecuteCommand(c.IncomingMessage.Command)
 		c.MessageReader <- c.IncomingMessage
-		if c.User.Banned {
-			err := c.WS.Close()
-			if err != nil {
-				engine.Debug.Println("could not close connection by user banned")
-				return
-			}
-			return
-		}
+
+		//TODO fix this
+		//if c.User.Banned {
+		//	err := c.WS.Close()
+		//	if err != nil {
+		//		engine.Debug.Println("could not close connection by user banned")
+		//		return
+		//	}
+		//	return
+		//}
 		//Reset the data of the incomming message
 		data := make(map[string]interface{})
 		cM := controller.Message{

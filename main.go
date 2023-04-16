@@ -1,14 +1,15 @@
-package main
+package websocketTemplate
 
 import (
+	"github.com/Joan-Goma/websocketTemplate/controller"
 	engine "github.com/JoanGTSQ/api"
 	"github.com/gin-gonic/gin"
-	"websocketTemplate/controller"
 )
 
 const version = "DRAGON DEV 0.0.1"
 
 func InitConfigs(DB controller.DbConnection, debugDragon, debugDB bool, router *gin.Engine, certRoute, keyRoute, port string) {
+
 	gin.SetMode(gin.ReleaseMode)
 
 	go controller.ReadInput(debugDragon)

@@ -3,9 +3,9 @@ package controller
 import (
 	"bufio"
 	"fmt"
+	"github.com/Joan-Goma/websocketTemplate/models"
 	engine "github.com/JoanGTSQ/api"
 	"os"
-	"websocketTemplate/models"
 )
 
 // ReadInput read in every moment the console and change maintenance and debug mode
