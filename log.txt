@@ -1,0 +1,30 @@
+[1;37m
+[INFO] [0m2023/04/16 08:47:31 dbController.go:69: Successfully loaded enviroment configuration
+[1;37m
+[INFO] [0m2023/04/16 09:01:57 main.go:48: Running non SSL server on port :8888
+[1;37m
+[INFO] [0m2023/04/16 09:03:32 main.go:58: Running non SSL server on port :8888
+[1;33m
+[WARNING] [0m2023/04/16 09:06:53 controllerWebsocket.go:102: websocket: close 1005 (no status)
+[1;33m
+[WARNING] [0m2023/04/16 09:06:53 controllerWebsocket.go:60: websocket: close 1005 (no status)
+[1;33m
+[WARNING] [0m2023/04/16 09:06:53 helper.go:125: websocket: close sent
+[1;37m
+[INFO] [0m2023/04/16 09:07:35 main.go:59: Running non SSL server on port :8888
+[1;37m
+[INFO] [0m2023/04/16 09:07:39 dbController.go:19: debug mode true
+[1;32m
+[DEBUG] [0m2023/04/16 09:07:53 controllerWebsocket.go:42: New client connected!
+[1;37m
+[INFO] [0m2023/04/16 09:07:57 dbController.go:19: debug mode false
+[1;33m
+[WARNING] [0m2023/04/16 09:07:59 controllerWebsocket.go:102: websocket: close 1000 (normal)
+[1;33m
+[WARNING] [0m2023/04/16 09:07:59 controllerWebsocket.go:60: websocket: close 1000 (normal)
+[1;33m
+[WARNING] [0m2023/04/16 09:07:59 helper.go:125: websocket: close sent
+[1;37m
+[INFO] [0m2023/04/16 09:44:01 main.go:59: Running non SSL server on port :8888
+[1;37m
+[INFO] [0m2023/04/16 09:44:15 dbController.go:19: debug mode changed -> true
